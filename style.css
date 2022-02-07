@@ -2,3 +2,70 @@
     margin: 0;
     padding: 0;
 }
+body {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 375px;
+    height: 707px;
+    background-image: url(./img/Rectangle.png);
+    background-position: center no-repeat;
+}
+
+
+
+/*====== Media-Screen====== */
+
+/* Iphone-se */
+@media screen and (max-height: 667px) {
+    .container{
+        height: 600px;
+    }
+}
+/* Iphone pro 12*/
+@media screen and (max-height:844px) {
+    .container {
+        height:750px;
+    }
+}
+/* Iphone XR*/
+@media screen and (max-height:896px) {
+    .container {
+        height:800px;
+        width: 414px;
+    }
+}
+
+/* Pixel-5*/
+@media screen and (max-height:851px) {
+    .container {
+        height: 770px ;
+        background-position: center;
+    }
+}
+
+/* Samsung Galaxy s8+*/
+@media screen and (max-height:740px) {
+    .container {
+        height: 400px;
+        width: 360px;
+    }
+}
+
+  @media screen and (max-height:851px) {
+      .container {
+          height: 760px;
+          width: 393px;
+      }
+  }
+  /* Galaxy-Fold */
+  @media screen and (max-height:653px) {
+      .container {
+          max-height: 570px;
+          width: 280px;
+      }
+  }
